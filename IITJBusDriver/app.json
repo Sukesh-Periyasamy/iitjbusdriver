@@ -1,0 +1,35 @@
+{
+  "expo": {
+    "name": "IITJ Bus Driver",
+    "slug": "iitj-bus-driver",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#1e40af"
+    },
+    "platforms": ["ios", "android", "web"],
+    "web": {
+      "bundler": "metro",
+      "favicon": "./assets/favicon.png"
+    },
+    "android": {
+      "package": "com.iitj.busdriver",
+      "permissions": [
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION",
+        "FOREGROUND_SERVICE"
+      ]
+    },
+    "ios": {
+      "bundleIdentifier": "com.iitj.busdriver",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "This app needs location access to track bus position for students.",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "This app needs background location access to track bus position continuously."
+      }
+    }
+  }
+}
